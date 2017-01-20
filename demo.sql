@@ -55,3 +55,17 @@ EXEC DeleteConferenceDayReservation
 EXEC DeleteWorkshopReservation
 
 SELECT COUNT(1) FROM Reservations
+
+/*companyId, companyName, street, streetnumber, postalcode, city, nip, mail, phone*/
+EXEC UpdateCompany 3308, 'Szwagrosoft', 'Januszkowa', '43', '25-103', 'Zawiercie', '1232156199', 'kontakt@szwagrosoft.pl', 793333692
+
+EXEC UpdateConference 1972, 'Zarządzanie projektami', 250, 23, 0.3
+
+/*Zwroci error*/
+EXEC UpdateConference 1972, 'Scrum', 100, 23, 0.3
+
+EXEC UpdateWorkshopInstance 4320, 5038, 250, 35, '2016-12-03 14:00:00.000', '2016-12-03 15:00:00.000'
+
+
+
+
